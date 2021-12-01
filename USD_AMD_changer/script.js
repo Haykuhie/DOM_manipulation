@@ -11,18 +11,7 @@ button.addEventListener("click", () => {
     alert("Invalid Input!!!");
     return;
   }
-  result.innerText = input.value * 480;
+  let number =  input.value * 486.28
+  result.innerText = number.toLocaleString();
 });
 
-button.addEventListener("keypress", function (e) {
-  if (e.key === "Enter") {
-    event.preventDefault();
-    if (input.value <= 0) {
-      form.reset();
-      result.innerText = "";
-      alert("Invalid Input!!!");
-      return;
-    }
-    result.innerText = input.value * 480;
-  }
-});
