@@ -43,6 +43,7 @@
 .decrease{
     width:110px;    
     border: 2px solid rgb(182, 138, 138);
+    cursor: not-allowed;
 }
 .reset{
     width:75px; 
