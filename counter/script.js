@@ -7,18 +7,17 @@ const increaseBtn = document.querySelector(".increase");
 const resetBtn = document.querySelector(".reset");
 
 let localStorageData = getLocalStorageData("counter");
-counter.innerText = localStorageData
-if(localStorageData>0)decreaseBtn.style.cursor = "pointer";
-
+counter.innerText = localStorageData;
+if (localStorageData > 0) decreaseBtn.style.cursor = "pointer";
 
 decreaseBtn.addEventListener("click", () => {
   let localStorageData = getLocalStorageData("counter");
   if (+localStorageData <= 0) {
     decreaseBtn.style.cursor = "not-allowed";
     return;
-  }  
+  }
   counter.innerText = +counter.innerText - 1;
-  localStorageData -= 1;  
+  localStorageData -= 1;
   setLocalStorageData("counter", localStorageData);
 });
 
