@@ -1,0 +1,1 @@
+export const changeRate = 486.28

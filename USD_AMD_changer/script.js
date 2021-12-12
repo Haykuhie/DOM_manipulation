@@ -1,3 +1,5 @@
+import {changeRate} from './constants/changeRate.js'
+
 const input = document.querySelector("input");
 const button = document.querySelector("button");
 const result = document.querySelector("p");
@@ -11,7 +13,7 @@ button.addEventListener("click", () => {
     alert("Invalid Input!!!");
     return;
   }
-  let number =  input.value * 486.28
+  let number =  input.value * changeRate
   result.innerText = number.toLocaleString();
 });
 
